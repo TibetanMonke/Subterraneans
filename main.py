@@ -35,4 +35,13 @@ while choice1 != "2":
 else:
     print("You keep on wading through the water, your feet sinking in the mud, your head and shoulders getting repeatedly stung by the many mosquitoes.")
 
+time.sleep(1)
+print(".")
+time.sleep(1)
+print(".")
+time.sleep(1)
+print("After a few hours of plowing through the swamps, the chirping of the crickets and the big beat is interrupted by an initially soft hissing, become increasingly louder.")
+time.sleep(1)
+print("The hissing forms a song that ...")
+
 
