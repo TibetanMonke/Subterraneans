@@ -44,7 +44,7 @@ print("After a few hours of plowing through the swamps, the chirping of the cric
 time.sleep(1)
 print("The hissing forms a song that is haunting but at the same time groovy and that takes you away to higher dimentions.")
 time.sleep(1)
-print("Before you, a face emerges out of the rain. [insert description]. He asks you: 'Where did you come from and how dare you enter my Southern Marshes?")
+print("Before you, a face emerges out of the rain. [insert description of Crawling King Snake]. He asks you: 'Where did you come from and how dare you enter my Southern Marshes?\nYou conjure up a reply:\n")
 
 answer1 = "1"
-
+answer1 = input("[1] You say: 'I tripped and fell into a dark pit, falling for what felt like hours, landing in your marshes in front of a dirt wall.' (Philosophical truth)\n[2] You say: 'I'm not sure where I came from, I didn't know these were your marshes, sorry.' (truth)\n[3] You say: 'May peace be upon you and your lands, I am a traveller from the country of sunken mountains and fallen trees, greetings.' (made up philosophical reply with some kind of truth in it)\n[4] You say: 'I walked in here, in search of King Crimson's treasure, do you know where it might be?' (lie)")
