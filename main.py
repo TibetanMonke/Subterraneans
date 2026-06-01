@@ -33,7 +33,7 @@ while choice1 != "2":
         print("Choose an available option")
         continue
 else:
-    print("You keep on wading through the water, your feet sinking in the mud, your head and shoulders getting repeatedly stung by the many mosquitoes.")
+    print("You keep on wading through the water, your feet sinking in the mud, your head and shoulders getting repeatedly stung by the many mosquitoes. A light drizzle starts.")
 
 time.sleep(1)
 print(".")
@@ -42,6 +42,9 @@ print(".")
 time.sleep(1)
 print("After a few hours of plowing through the swamps, the chirping of the crickets and the big beat is interrupted by an initially soft hissing, become increasingly louder.")
 time.sleep(1)
-print("The hissing forms a song that ...")
+print("The hissing forms a song that is haunting but at the same time groovy and that takes you away to higher dimentions.")
+time.sleep(1)
+print("Before you, a face emerges out of the rain. [insert description]. He asks you: 'Where did you come from and how dare you enter my Southern Marshes?")
 
+answer1 = "1"
 
