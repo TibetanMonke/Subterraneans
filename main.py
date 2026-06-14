@@ -46,8 +46,8 @@ print("After a few hours of plowing through the swamps, the chirping of the cric
 time.sleep(8)
 print("The hissing forms a song that is haunting but at the same time groovy and that takes you away to higher dimentions.")
 time.sleep(8)
-print("Before you, a face emerges out of the rain. [insert description of Crawling King Snake]. He asks you: 'Where did you come from and how dare you enter my Southern Marshes?'\n")
-time.sleep(10)
+print("Before you, a face emerges out of the rain. It's a giant king cobra. \nThe snake wears a royal crown on his head, from underneath which long brown curled strands of thick hair fall over the cobra's hood. \nThe cobra asks you: 'Where did you come from and how dare you enter my Southern Marshes?'\n")
+time.sleep(20)
 print("You conjure up a reply:\n")
 
 def crystalShipDialogue():
@@ -57,39 +57,81 @@ def crystalShipDialogue():
     time.sleep(5)
     print("You open the rusty door and step inside as a nauseating smell enters your nose.\nThe driver-frog, with the glasses, turns to you and says: 'Hi.. We're the Riders... on the storm, welcome to our Crystal Ship. We heard we gotta take you outta here.'\nThe shotgun-frog hands you a small, green fruit and says: 'Here take this, eat it. It's the only way outta here man...'\n")
     time.sleep(20)
-    print("You hesitantly take the fruit.\nJust as you open your mouth to start chewing, the Crawling King Snake speaks and says: 'Alright now take it easy. Fare you well Stranger, soil-marcher.'\n")
+    print("You hesitantly take the fruit.\nJust as you open your mouth to start chewing, the Crawling King Snake speaks and says: 'Alright now, take it easy. Fare you well Stranger, soil-marcher.'\n")
     time.sleep(10)
     print("You put the fruit in your mouth and chew.\nAn orange glow slowly forms around the edges of your view.\nThe driver-frog, with the glasses, yells: 'Alright! Let's go on a moonlight drive!'\n")
+    time.sleep(10)
 
 answer1 = "0"
 while answer1 != "1" or answer1 != "2" or answer1 != "3" or answer1 != "4":
-    answer1 = input("[1] You say: 'I tripped and fell into a dark pit, falling for what felt like hours, landing in your marshes in front of a dirt wall.' (philosophical truth)\n[2] You say: 'I'm not sure where I came from, I didn't know these were your marshes, sorry.' (truth)\n[3] You say: 'May peace be upon you and your lands, I am a traveller from the country of sunken mountains and fallen trees, greetings.' (made up philosophical reply with some truth in it)\n[4] You say: 'I walked in here, in search of King Crimson's treasure, do you know where it might be?' (lie)\n")
+    answer1 = input("[1] You say: 'I tripped and fell into a dark pit, falling for what felt like hours, landing in your marshes in front of a dirt wall.' (philosophical truth)\n[2] You say: 'I'm not sure where I came from, I didn't know these were your marshes, sorry.' (truth)\n[3] You say: 'May peace be upon you and your lands, I am a traveller from the country of sunken mountains and fallen trees, greetings.' (made up philosophical reply with some truth in it)\n[4] You say: 'I walked in here, in search of King Crimson's treasure, do you know where it might be?' (lie based on ancient folklore)\n")
     if answer1 == "1":
-        print("The Crawling King Snake says: 'Ah, you are one of those, a stranger from the top of the soil.\nWell, as long as you don't disturb our peace, we won't bother you.'")
-    elif answer1 == "2":
-        print("The Crawling King Snake says: 'Hmm... You must be one of those Soil-Marchers from the top.\nCan you remember anything at all from before you got here?\n")
-        time.sleep(8)
+        print("The Crawling King Snake says: \n'Ah, you are one of those Soil-Marchers, a Stranger from the top, aren't you?'\n")
+        time.sleep(5)
         answer1sub1 = "0"
         while answer1sub1 != "1" or answer1sub1 != "2":
-            answer1sub1 = input("[1] You say: 'I can only remember a vague white light surrounded by blue.' (truth)\n[2] You say: 'No, nothing.' (lie)\n")
+            answer1sub1 = input("[1] You say: 'I'm sorry, but I have no idea what a Soul-Marcher is or what you mean by 'the top' (truth).\n[2] You say: That's right... I think...' (obvious lie in order to get an explanation)")
             if answer1sub1 == "1":
+                print("The Crawling King Snake says: \n'Right... Well neither do any of the Strangers down here. \nAll I can say that you are now in the realm of the Subterraneans and people from the top are what we call Soil-Marchers.\nI'll help your poor soul out of these godforsaken lands.\nMy Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                time.sleep(20)
+                break
+            if answer1sub1 == "2":
+                print("The Crawling King Snake says: \n'Yeah that's what I thought.\nWell in that case, I'll try to help your poor soul.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                time.sleep(15)
+                break
+    elif answer1 == "2":
+        print("The Crawling King Snake says: \n'Hmm... You must be one of those Soil-Marchers from the top.\nCan you remember anything at all from before you got here?\n")
+        time.sleep(8)
+        answer1sub2 = "0"
+        while answer1sub2 != "1" or answer1sub2 != "2":
+            answer1sub2 = input("[1] You say: 'I can only remember a vague white light on a clear blue background.' (truth)\n[2] You say: 'No, nothing.' (lie)\n")
+            if answer1sub2 == "1":
                 print("The Crawling King Snake says:\n'A Soil-Marcher indeed.\nIn that case, I'll try to help your poor soul.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
                 time.sleep(15)
-                crystalShipDialogue()
-                time.sleep(8)
-                drumRoll()
-                print("Chapter 2: In the Court of the Crimson King")
                 break
-            elif answer1sub1 == "2":
-                print("b")
+            elif answer1sub2 == "2":
+                print("The Crawling King Snake says:\n'Though I see straight through your lie, I respect your suspicion of strangers.\nYou should be suspicious in these, to you, unknown lands.\nThere are creatures out here who are not afraid to rob or kill, so be cautious like were just then, play it smart.'\n")
+                time.sleep(20)
+                print("He continues: \n'Well, like I said, I presume you are a Soil-Marcher, one from the top.\nIf that is indeed the case, I'm gonna try to help you as best as I can.\nYou can't stay here, it's too dangerous and besides, you probably won't get out of here on you own.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                time.sleep(25)
+                break
             else:
                 print("Choose an available option.")
                 continue
         break
     elif answer1 == "3":
-        print("The Crawling King Snake says: 'From the Quiet Country huh?\nWe don't see your kind much around here, what brings you here, Stranger?'")
+        print("The Crawling King Snake says: \n'From the Quiet Country huh?\nWe don't see your kind much around here, what brings you here, Stranger?'")
+        time.sleep(8)
+        answer1sub3 = "0"
+        while answer1sub3 != "1" or answer1sub3 != "2":
+            answer1sub3 = input("[1] You say: 'An almost infinite amount of causes that are retracable to before the creation of the universe bring me to the place and position I'm currently in.' [technically the truth] \n[2] You say: 'To be honest, I don't know. (lie, but close to the truth)'\n")
+            if answer1sub3 == "1":
+                print("The Crawling King Snake says: \n'You're that kind of person huh?\nWell, be cautious: a lot of creatures in these lands wouldn't have even let you finish that sentence.\nYou don't look like you belong or want to be here.\nFor your own sake, I'll have you taken west over my highway.\nThe west is the best, you'll travel with my Riders.'\n")
+                time.sleep(20)
+                break
+            elif answer1sub3 == "2":
+                print("The Crawling King Snake says: \n'Neither did any of the Strangers that have passed through these lands.\nI'm guessing you're a Soil-Marcher, from the top.\nIf that is indeed the case, I'm gonna try to help you as best as I can.\nYou can't stay here, it's too dangerous and besides, you probably won't get out of here on you own.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                time.sleep(20)
+                break    
+        break
     elif answer1 == "4":
-        print("The Crawling King Snake says: 'You're bold to just walk in my lands like that.\nKing Crimson's treasure you said huh? \nWell since our families have been in a rivalry for aeons, I might just help you with your search. \nYou got a trace yet?'")
+        print("The Crawling King Snake says: \n'You're bold to just walk in my lands like that.\nKing Crimson's treasure you said huh? \nWell since our families have been in a rivalry for aeons, I might just help you with your search. \nYou got a trace yet?'")
+        time.sleep(10)
+        answer1sub4 = "0"
+        while answer1sub4 != "1" or answer1sub4 != "2":
+            answer1sub4 = input("[1] You say: 'Yes, I found out that the treasure is somewhere in his kingdom, under The Willow.' (lie based on the same folklore)\n[2] You say: 'Uhm no... I'm not actually looking for a treasure, I don't know how I ended up here.' (painful truth)")
+            if answer1sub4 == "1":
+                print("The Crawling King Snake says:\n'Alright great! I can help you with getting to the King's kingdom.\nMy Riders can take you there in the blink of an eye, let me take you to them.'\n")
+                time.sleep(15)
+                break
+            elif answer1sub4 == "2":
+                print("The Crawling King Snake says:\n 'Of course... Just like every other Stranger that passes through these marshes.\nYou must be a Soil-Marcher, from the top.\nIf that is indeed the case, I'm gonna try to help you as best as I can.\nYou can't stay here, it's too dangerous and besides, you probably won't get out of here on you own.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                time.sleep(20)
+                break
     else:
         print("Choose an available option")
         continue
+
+crystalShipDialogue()
+drumRoll()
+print("Chapter 2: In the Court of the Crimson King") #  :o
