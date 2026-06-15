@@ -19,14 +19,14 @@ def snakeMeeting():
     time.sleep(1)
     print("After a few hours of plowing through the swamps, the chirping of the crickets and the big beat is interrupted by an initially soft hissing, become increasingly louder.")
     time.sleep(8)
-    print("The hissing forms a song that is haunting but at the same time groovy and that takes you away to higher dimentions.")
+    print("The hissing forms a song that is haunting but at the same time groovy and that takes you away to higher dimentions.\n")
     time.sleep(8)
     print("Before you, a face emerges out of the rain. It's a giant king cobra. \nThe snake wears a royal crown on his head, from underneath which long brown curled strands of thick hair fall over the cobra's hood. \nThe cobra asks you: 'Where did you come from and how dare you enter my Southern Marshes?'\n")
     time.sleep(20)
     print("You conjure up a reply:\n")
 
 def crystalShipDialogue():
-    print("The Crawling King Snake takes you to a small wooden dock.\nOn the very end of the dock, a rusty old car with no wheels is parked in the shallow water.\nAs you come closer, you see three muddy, brown frogs. The driver-frog is wearing glasses.\n")
+    print("The Crawling King Snake takes you to a small wooden dock.\nOn the very end of the dock, a rusty old car with no wheels is parked in the shallow water.\nAs you come closer, you see three muddy, brown frogs sitting inside the car2. The driver-frog is wearing glasses.\n")
     time.sleep(20)
     print("The one frog sitting a back seat says: 'Hey man... get in.'\n")
     time.sleep(5)
@@ -61,7 +61,7 @@ def moonchildMeeting():
     time.sleep(20)
     print("The child, not at all fazed by your arrival, replies, whispering:\n 'Shh! I'm playing hide and seek with the Ghosts of Dawn!\nAlthough just then I was dancing in the shallows of a river and in a moment I will be dreaming in the shadows of a Willow.'\n")
     time.sleep(20)
-    print("She seems to have forgotten about the game she's playing, for she continues:\n'You must be one of those Strangers that pass by here occasionaly, I'm the Moonchild, still waiting for a smile of a Sunchild.\nI'll give you some advice: be careful with the King's Gaurds, you mustn't lie to them!\n'")
+    print("She seems to have forgotten about the game she's playing, for she continues:\n'You must be one of those Strangers that pass by here occasionaly, I'm the Moonchild, still waiting for a smile of a Sunchild.\nI'll give you some advice: be careful with the King's Gaurds, you mustn't lie to them!'\n")
     time.sleep(20)
     print("Suddenly the Moonchild runs away into the hills and dissapears behind one soon after...\nSo, now what? You ask yourself.\n")
     time.sleep(8)
@@ -75,26 +75,24 @@ def redNightmare():
     time.sleep(1)
     print(".")
     time.sleep(2)
-    print("You open your eyes and vaguely remember a Red Nightmare about an aeroplane, you sweating and a greyhound...")
+    print("You open your eyes and vaguely remember a Red Nightmare about an aeroplane, you sweating, and a greyhound...")
     time.sleep(10)
     print("You look around and remember where you are")
 
 
-print("DISCLAIMER: You might have a better experience with the use of imagination")
-time.sleep(10)
+print("DISCLAIMER: You might have a better experience with the use of imagination and read carefully!")
+time.sleep(8)
 
 name = input("How would you like to name your character? ")
 print("The story of " + name + " starts here.\nIn the grey lands of the Southern Marshes, where the big beat sounds.\nWhere the Crawling King Snake rules, though he is old and his skin is cold.\nIn these marshes, the peace frogs dance jollily to the big beat.\nThis is where the story starts.")
-time.sleep(15) #change to longer later
-print("\nSubterraneans")
+time.sleep(12) #change to longer later
+print("\n===============\n\nSubterraneans\n\n===============")
 time.sleep(2)
 
 drumRoll()
-print("Chapter 1: Break on Through (To the Other Side)")
+print("\n----------------\nChapter 1: Break on Through (To the Other Side)\n----------------")
 time.sleep(3)
 print("Here you are, in the marshes, you look around and see shallow brown water, plants in the water, plants on the water. There are mosquitoes everywhere.\nYou've got a mere three options: ")
-
-snakeMeeting()
 
 choice1 = "1"
 while choice1 != "2":
@@ -112,7 +110,7 @@ while choice1 != "2":
 else:
     print("You keep on wading through the water, your feet sinking in the mud, your head and shoulders getting repeatedly stung by the many mosquitoes. A light drizzle starts.")
 
-
+snakeMeeting()
 
 answer1 = "0"
 while answer1 != "1" or answer1 != "2" or answer1 != "3" or answer1 != "4":
@@ -187,8 +185,8 @@ while answer1 != "1" or answer1 != "2" or answer1 != "3" or answer1 != "4":
 
 crystalShipDialogue()
 drumRoll()
-print("Chapter 2: Red") #  :o
-
+print("\n----------------\nChapter 2: Red\n----------------")
+ 
 journeyToKingdom()
 
 choice2 = "0"
@@ -196,7 +194,7 @@ willow = False
 walking = False
 waiting = False
 while choice2 != "1" or choice2 != "2" or choice2 != "3":
-    choice2 = input("[1] Start walking in a random direction \n[2] Walk to the lonely Willow standing on the shore of a small river \n[3] Wait")
+    choice2 = input("[1] Start walking in a random direction \n[2] Walk to the lonely Willow standing on the shore of a small river \n[3] Wait\n")
     if choice2 == "1":
         print("You start walking... \nFor hours upon hours you walk, uphill, downhill, uphill, downhill, but the hills won't budge.\nThe sun sinks and the sky turns a soft peach pink.\n")
         time.sleep(15)
@@ -242,7 +240,7 @@ while choice3 != "1" or choice3 != "2":
         choice3sub1 = "0"
         liar = False
         while choice3sub1 != "1" or choice3sub1 != "2":
-            choice3sub1 = input("[1] 'I come from the Southern Swamps, I'm" + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to speak to the King about the treasure in these lands.' (lie)")
+            choice3sub1 = input("[1] 'I come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to speak to the King about the treasure in these lands.' (lie)\n")
             if choice3sub1 == "1":
                 print("The guards reply in unison: 'From the Southern Swamps you say... Hmpf, well the King can always use new reports from those dirty lands, come on in.'\n")
                 time.sleep(15)
@@ -254,7 +252,7 @@ while choice3 != "1" or choice3 != "2":
 
                 choice3sub1sub1 = "0"
                 while choice3sub1sub1 != "1" or choice3sub1sub1 != "2":
-                    choice3sub1sub1 = input("[1] Change your answer\n [2] Don't change your answer\n")
+                    choice3sub1sub1 = input("[1] Change your answer\n[2] Don't change your answer\n")
                     if choice3sub1sub1 == "1":
                         print("Good choice")
                         time.sleep(2)
@@ -284,7 +282,7 @@ while choice3 != "1" or choice3 != "2":
         choice3sub2 = "0"
         liar = False
         while choice3sub2 != "1" or choice3sub2 != "2":
-            choice3sub2 = input("[1] 'I come from the Southern Swamps, I'm" + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to find treasure in these lands.' (lie)")
+            choice3sub2 = input("[1] 'I come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to find treasure in these lands.' (lie)\n")
             if choice3sub2 == "1":
                 print("The guards reply in unison: 'From the Southern Swamps you say... Hmpf, well the King can always use new reports from those dirty lands, we'll take you to him.'\n")
                 time.sleep(15)
@@ -298,7 +296,7 @@ while choice3 != "1" or choice3 != "2":
 
                 choice3sub2sub1 = "0"
                 while choice3sub2sub1 != "1" or choice3sub2sub1 != "2":
-                    choice3sub2sub1 = input("[1] Change your answer\n [2] Don't change your answer\n")
+                    choice3sub2sub1 = input("[1] Change your answer\n[2] Don't change your answer\n")
                     if choice3sub2sub1 == "1":
                         print("Good choice")
                         time.sleep(2)
@@ -323,4 +321,24 @@ while choice3 != "1" or choice3 != "2":
         continue
 
 drumRoll()
-print("Chapter 3: In the Court of the Crimson King")
+print("\n----------------\nChapter 3: In the Court of the Crimson King\n----------------")
+
+print("Inside the palace, it doesn't look mutch different: red bricks.\nYou walk through halls of red bricks, not knowing where to go.\nThe palace seems to be totally empty of people, but full of red bricks...")
+time.sleep(15)
+print("\nEventually, might be a coincidence, it might be not, you end up in big hall (of red bricks) with one singular chair in the centre of the huge hall.\nThis chair is surrounded by about ten of the same kind of guards that questioned you earlier.")
+time.sleep(15)
+print("\nAs soon as they hear you, all of the guards turn around.\nA group of guards starts marching towards you, while the ones left behind akwardly try to turn the chair around.\nThe guards approach menacingly, while slowly but surely the chair is turned around...")
+time.sleep(18)
+print("\nJust as the guards want to take you away, the chair is finally fully turned and a small naked lizard appears sitting in that very chair.\nIn a very high voice he yells: 'Stop that! Let me see the Stranger!'")
+time.sleep(15)
+print("\nThe guards now hastily make way for the lizard to see you.\nThe lizard's jaw drops and he says: 'Ohhh... It's you..., " + name + "...\nI'm the Crimson King, or King Crimson, if you will, but you won't know me... Nor do you know why you're here...'")
+time.sleep(15)
+print("A silence falls...")
+time.sleep(5)
+print("You stay silent, in hope of getting an answer to your question.")
+time.sleep(5)
+print("Finally, the King Crimson continues: 'Well... It's simple. You're not here... You're dreaming... Wake up " + name + ".'")
+time.sleep(10)
+
+drumRoll()
+print("===============\n\nThis is The End: beautiful friend...\n\n===============")
