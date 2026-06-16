@@ -43,7 +43,7 @@ def journeyToKingdom():
     time.sleep(5)
     print("The faces of the frogs around you change proportions constantly.")
     time.sleep(4)
-    print("As as the trip nears its end, the Crystal Ship starts descending into the now bright white clouds.")
+    print("As the trip nears its end, the Crystal Ship starts descending into the now bright white clouds.")
     time.sleep(8)
     print("Looking below you, you see a landscape of seemingly everlasting green hills in all directions.")
     time.sleep(8)
@@ -81,7 +81,7 @@ def redNightmare():
 def crimsonKing():
     print("Inside the palace, it doesn't look mutch different: red bricks.\nYou walk through halls of red bricks, not knowing where to go.\nThe palace seems to be totally empty of people, but full of red bricks...")
     time.sleep(15)
-    print("\nEventually, might be a coincidence, it might be not, you end up in big hall (of red bricks) with one singular chair in the centre of the huge hall.\nThis chair is surrounded by about ten of the same kind of guards that questioned you earlier.")
+    print("\nEventually, it might be a coincidence, might be not, you end up in big hall (of red bricks) with one singular chair in the centre of the huge hall.\nThis chair is surrounded by about ten of the same kind of guards that questioned you earlier.")
     time.sleep(15)
     print("\nAs soon as they hear you, all of the guards turn around.\nA group of guards starts marching towards you, while the ones left behind akwardly try to turn the chair around.\nThe guards approach menacingly, while slowly but surely the chair is turned around...")
     time.sleep(18)
@@ -91,7 +91,7 @@ def crimsonKing():
     time.sleep(15)
     print("A silence falls...")
     time.sleep(5)
-    print("You stay silent, in hope of getting an answer to your question.")
+    print("You stay silent, in the hope of getting an answer to your question.")
     time.sleep(5)
     print("Finally, the King Crimson continues: 'Well... It's simple. You're not here... You're dreaming... Wake up " + name + ".'")
     time.sleep(10)
@@ -193,7 +193,7 @@ while answer1 != "1" or answer1 != "2" or answer1 != "3" or answer1 != "4":
                 time.sleep(15)
                 break
             elif answer1sub4 == "2":
-                print("The Crawling King Snake says:\n 'Of course... Just like every other Stranger that passes through these marshes.\nYou must be a Soil-Marcher, from the top.\nIf that is indeed the case, I'm gonna try to help you as best as I can.\nYou can't stay here, it's too dangerous and besides, you probably won't get out of here on you own.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
+                print("The Crawling King Snake says:\n'Of course... Just like every other Stranger that passes through these marshes.\nYou must be a Soil-Marcher, from the top.\nIf that is indeed the case, I'm gonna try to help you as best as I can.\nYou can't stay here, it's too dangerous and besides, you probably won't get out of here on you own.\nI'll get you out of these godforsaken lands, my Riders will take you over my highway to the west.\nThe west is the best.'\n")
                 time.sleep(20)
                 break
         break
@@ -251,14 +251,14 @@ while choice3 != "1" or choice3 != "2":
     if choice3 == "1":
         print("You walk.\nYou walk for a long time.\nThen... From behind the endless green hills, three towers rise up.\nA mighty palace made entirely out of red bricks appears before you.\nYou approach the gates...\n")
         time.sleep(20)
-        print("On each side of the gate stands a tall guard in medieval knight armour, both armed with a halberd.\nAs you approach the gate they cross there halberds, forming a barrier, and speak in unison:\n'Who are you and why do you wish to enter King Crimson's palace?\n")
+        print("On each side of the gate stands a tall guard in medieval knight armour, both armed with a halberd.\nAs you approach the gate they cross there halberds, forming a barrier, and speak in unison:\n'Who are you and why do you wish to enter King Crimson's palace?'\n")
         time.sleep(20)
         print("You reply with: ")
         time.sleep(2)
         choice3sub1 = "0"
         liar = False
         while choice3sub1 != "1" or choice3sub1 != "2":
-            choice3sub1 = input("[1] 'I come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to speak to the King about the treasure in these lands.' (lie)\n")
+            choice3sub1 = input("[1] 'I've come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to speak to the King about the treasure in these lands.' (lie)\n")
             if choice3sub1 == "1":
                 print("The guards reply in unison: 'From the Southern Swamps you say... Hmpf, well the King can always use new reports from those dirty lands, come on in.'")
                 time.sleep(15)
@@ -293,14 +293,14 @@ while choice3 != "1" or choice3 != "2":
     elif choice3 == "2":
         print("You wait.\nYou wait for hours and hours.\nThen... from behind the endless green hills two knights on horseback appear.\nThey ride towards you...\n")
         time.sleep(15)
-        print("The two riders halt besides you.\nThey look identical, wearing medieval armour and both armed with a halberd.\nThey speak in unison:\n'Who are you and why are you in King Crimson's land?\n")
+        print("The two riders halt besides you.\nThey look identical, wearing medieval armour and both armed with a halberd.\nThey speak in unison:\n'Who are you and why are you in King Crimson's land?'\n")
         time.sleep(20)
         print("You reply with: ")
         time.sleep(2)
         choice3sub2 = "0"
         liar = False
         while choice3sub2 != "1" or choice3sub2 != "2":
-            choice3sub2 = input("[1] 'I come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to find treasure in these lands.' (lie)\n")
+            choice3sub2 = input("[1] 'I've come from the Southern Swamps, I'm " + name +  " and I'm looking for a way back home...' (truth)\n[2] 'I'm a free traveller and wish to find treasure in these lands.' (lie)\n")
             if choice3sub2 == "1":
                 print("The guards reply in unison: 'From the Southern Swamps you say... Hmpf, well the King can always use new reports from those dirty lands, we'll take you to him.'\n")
                 time.sleep(15)
@@ -340,6 +340,7 @@ while choice3 != "1" or choice3 != "2":
 
 drumRoll()
 print("\n----------------\nChapter 3: In the Court of the Crimson King\n----------------")
+time.sleep(5)
 
 crimsonKing()
 
